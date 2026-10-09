@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sota briefing</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.2.5/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-mono@5.2.5/index.css" />
+  <style>
+    :root {
+      --bg: #09090b;
+      --card: #18181b;
+      --border: #27272a;
+      --text: #ffffff;
+      --muted: #a1a1aa;
+      --cyan: #22d3ee;
+      --grad: linear-gradient(90deg, #34d399 0%, #22d3ee 100%);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
+    }
+    .topbar { height: 2px; background: var(--grad); }
+    .page { max-width: 880px; margin: 0 auto; padding: 64px 32px 96px; }
+    .kicker {
+      font-family: "Geist Mono", ui-monospace, monospace;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .kicker em {
+      font-style: normal;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .lede {
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--muted);
+      max-width: 48ch;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 13px;
+      font-family: "Geist Mono", ui-monospace, monospace;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 36px 0 14px;
+    }
+    p, td, li { font-size: 17px; line-height: 1.55; }
+    p { color: var(--muted); margin-bottom: 14px; }
+    p strong { color: var(--text); font-weight: 500; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    th, td {
+      text-align: left;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      font-family: "Geist Mono", ui-monospace, monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+      background: #121214;
+    }
+    tr:last-child td { border-bottom: 0; }
+    td.name { color: var(--text); font-weight: 500; width: 28%; }
+    td.role { color: var(--cyan); width: 26%; }
+    .box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 22px 10px;
+      margin-bottom: 14px;
+    }
+    .box h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
+    .box ul { padding-left: 18px; color: var(--muted); margin-bottom: 12px; }
+    .box li { margin-bottom: 8px; }
+    .next {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 26px;
+    }
+    .next p:last-child { margin-bottom: 0; }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .foot {
+      margin-top: 56px;
+      font-family: "Geist Mono", ui-monospace, monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #71717a;
+    }
+    .sys {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 720px) { .sys { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <article class="page">
+    <p class="kicker"><em>Sota</em> / For management</p>
+    <h1>Sota makes the right visual for every customer, at production scale.</h1>
+    <p class="lede">This page is Sota only. There was no journal and no Sota product code in the workspace that produced it. “What we did” is thin on purpose.</p>
+
+    <h2>Who to contact</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Person</th>
+          <th>Talk to them about</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Alexander Oppermann</td>
+          <td class="role">Company direction</td>
+          <td>Co-founder and CEO. Public contact. Sota is the trading name of Rival Technologies Ltd, London.</td>
+        </tr>
+        <tr>
+          <td class="name">Karl Andersson</td>
+          <td class="role">This briefing</td>
+          <td>Signs off before the deck goes further.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:14px">This note does not message anyone.</p>
+
+    <h2>How the system fits together</h2>
+    <p>Public product model from <a href="https://www.sota.tech/">sota.tech</a>. The cycle is ideate, then produce, then optimise. That cycle runs on a stack of models, context, workflows, and applications. Teams use it for product content, localisation, testing, and automation.</p>
+    <div class="sys">
+      <div class="box">
+        <h3>The cycle</h3>
+        <ul>
+          <li>Ideate: find the visual that should exist.</li>
+          <li>Produce: make it on-brand, at volume.</li>
+          <li>Optimise: learn what worked, then do it again.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>The stack</h3>
+        <ul>
+          <li>Models: the visual intelligence.</li>
+          <li>Context: brand, product, customer.</li>
+          <li>Workflows: how a job moves through.</li>
+          <li>Applications: where teams run it.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>What we did this period</h2>
+    <div class="box">
+      <h3>Recorded. Thin.</h3>
+      <ul>
+        <li>This briefing: four slides and this page, in Sota’s visual system.</li>
+        <li>A picture of how the public Sota system fits together.</li>
+        <li>No Sota product change. This session was not on a Sota project.</li>
+      </ul>
+    </div>
+    <p>A local Sota journal is required before this section can name real period work.</p>
+
+    <h2>Potential</h2>
+    <p>Published company outcomes on sota.tech: <strong>8x</strong> faster campaign launch, <strong>85%</strong> less spend on outside production, <strong>4x</strong> output with smaller teams. Those are company figures. They are not a claim about this pass.</p>
+
+    <h2>The next conversation</h2>
+    <div class="next">
+      <p><strong>Open the next session on the Sota project</strong> and bring the journal. That fills “what we did.”</p>
+      <p><strong>Ask Alexander</strong> if company direction for this briefing needs a pass from him.</p>
+      <p><strong>Ask Karl</strong> before the deck goes to anyone else.</p>
+    </div>
+
+    <p class="foot">Sota briefing · Companion to the 4-slide deck</p>
+  </article>
+</body>
+</html>
